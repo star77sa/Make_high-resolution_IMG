@@ -18,5 +18,4 @@ pip install opencv-contrib-python
 3. '내보내기'버튼을 통하여 이미지를 result 폴더의 result.png 로 저장합니다. (이미지 저장은 super-resolution 방식으로만 저장이 됩니다.)
 4. '나가기'버튼을 통하여 프로그램을 종료합니다.
 ---
-- Real Time 버튼은 웹캠을 통하여 실시간으로 Bicubic 방법과 Super-Resolution 방법을 적용한 출력물을 보여줍니다.
-- 'q' 버튼을 통하여 화면 밖으로 나갈 수 있습니다.
+5. Real Time 버튼은 웹캠을 통하여 실시간으로 Bicubic 방법과 Super-Resolution 방법을 적용한 출력물을 보여줍니다. 'q' 버튼을 통하여 프로그램을 종료할 수 있습니다.
