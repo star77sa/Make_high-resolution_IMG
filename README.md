@@ -12,13 +12,13 @@ $ pip install opencv-contrib-python
 ├── examples  
 │   ├── zebra.png  
 │   └── rena.png  
-├── result  
-│   └── result.png  
 ├── models  
 │   ├── FSRCNN_x3.pb  
 │   ├── LapSRN_x2.pb  
 │   ├── LapSRN_x4.pb  
 │   └── LapSRN_x8.pb  
+├── result  
+│   └── result.png  
 └── resolution.py  
 
 examples 폴더에 변환을 원하는 이미지를 넣습니다.
