@@ -42,10 +42,10 @@ $ python resolution.py
 3. '내보내기'버튼을 통하여 이미지를 result 폴더의 result.png 로 저장합니다. (이미지 저장은 super-resolution 방식으로만 저장이 됩니다.)
 4. '나가기'버튼을 통하여 프로그램을 종료합니다.
 
-- original image
+- original image  
 ![image](https://github.com/star77sa/Make_high-resolution_IMG/assets/73769046/adbc41e6-0b58-4c19-aeda-380c5ef3add5)
 
-- Bicubic / Super-Resolution
+- Bicubic / Super-Resolution  
 ![image](https://github.com/star77sa/Make_high-resolution_IMG/assets/73769046/48d9376f-caea-4318-a048-6e5a086a4a32)
 
 ---
