@@ -8,16 +8,36 @@ Super-Resolution을 위해 opencv-contrib-python 설치가 필요합니다.
 ```python
 $ pip install opencv-contrib-python
 ```
+구성도
+├── examples
+│   ├── zebra.png
+│   └── rena.png
+├── result
+│   └── result.png
+├── models
+│   ├── FSRCNN_x3.pb
+│   ├── LapSRN_x2.pb
+│   ├── LapSRN_x4.pb
+│   └── LapSRN_x8.pb
+└── resolution.py
+
+examples 폴더에 변환을 원하는 이미지를 넣습니다.
+result 폴더에는 변환된 이미지가 result.png로 저장됩니다.
+models 폴더에는 super-resolution을 위한 사전학습된 모델들이 들어있습니다.
+
+프로그램 작동을 위해선 위와 같이 폴더가 구성되어 있어야 합니다.
 
 터미널에 다음과 같이 입력하여 프로그램을 작동시킵니다.
 ```python
 $ python resolution.py
 ```
+
+
 ![image](https://github.com/star77sa/Make_high-resolution_IMG/assets/73769046/d2b646e9-014e-432f-ad40-9fc5328fb326)
 
 
 
-1. examples 폴더에 변환을 원하는 이미지를 넣은 뒤 '이미지 열기' 버튼으로 파일을 열어줍니다.
+1. '이미지 열기' 버튼으로 examples 폴더 안의 이미지 파일을 열어줍니다.
 2. Scale (x2, x4, x8) 선택 및 Bicubic / Super-Resolution 방법 선택을 한 뒤에 '이미지 변환' 버튼으로 변환된 이미지를 출력합니다.
 3. '내보내기'버튼을 통하여 이미지를 result 폴더의 result.png 로 저장합니다. (이미지 저장은 super-resolution 방식으로만 저장이 됩니다.)
 4. '나가기'버튼을 통하여 프로그램을 종료합니다.
