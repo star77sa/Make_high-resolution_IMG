@@ -9,16 +9,27 @@ Super-Resolution을 위해 opencv-contrib-python 설치가 필요합니다.
 $ pip install opencv-contrib-python
 ```
 구성도
+
 ├── examples
+
 │   ├── zebra.png
+
 │   └── rena.png
+
 ├── result
+
 │   └── result.png
+
 ├── models
+
 │   ├── FSRCNN_x3.pb
+
 │   ├── LapSRN_x2.pb
+
 │   ├── LapSRN_x4.pb
+
 │   └── LapSRN_x8.pb
+
 └── resolution.py
 
 examples 폴더에 변환을 원하는 이미지를 넣습니다.
