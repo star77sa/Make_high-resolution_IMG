@@ -6,9 +6,13 @@ Vision Agent - Make high-resolution IMG
 
 Super-Resolution을 위해 opencv-contrib-python 설치가 필요합니다.
 ```python
-pip install opencv-contrib-python
+$ pip install opencv-contrib-python
 ```
 
+터미널에 다음과 같이 입력하여 프로그램을 작동시킵니다.
+```python
+$ python resolution.py
+```
 ![image](https://github.com/star77sa/Make_high-resolution_IMG/assets/73769046/d2b646e9-014e-432f-ad40-9fc5328fb326)
 
 
