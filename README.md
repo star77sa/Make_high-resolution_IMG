@@ -41,5 +41,12 @@ $ python resolution.py
 2. Scale (x2, x4, x8) 선택 및 Bicubic / Super-Resolution 방법 선택을 한 뒤에 '이미지 변환' 버튼으로 변환된 이미지를 출력합니다.
 3. '내보내기'버튼을 통하여 이미지를 result 폴더의 result.png 로 저장합니다. (이미지 저장은 super-resolution 방식으로만 저장이 됩니다.)
 4. '나가기'버튼을 통하여 프로그램을 종료합니다.
+
+- original image
+![image](https://github.com/star77sa/Make_high-resolution_IMG/assets/73769046/adbc41e6-0b58-4c19-aeda-380c5ef3add5)
+
+- Bicubic / Super-Resolution
+![image](https://github.com/star77sa/Make_high-resolution_IMG/assets/73769046/48d9376f-caea-4318-a048-6e5a086a4a32)
+
 ---
 5. Real Time 버튼은 웹캠을 통하여 실시간으로 Bicubic 방법과 Super-Resolution 방법을 적용한 출력물을 보여줍니다. 'q' 버튼을 통하여 프로그램을 종료할 수 있습니다.
