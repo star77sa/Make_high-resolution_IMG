@@ -53,9 +53,9 @@ $ python resolution.py
 
 ### Real Time 변환 결과
 
-- original
+- original  
 ![image](https://github.com/star77sa/Make_high-resolution_IMG/assets/73769046/adc3afa4-64ce-4699-b38e-1e5a07ab40c1)
 
-- Bicubic / Super-Resolution
+- Bicubic / Super-Resolution  
 ![image](https://github.com/star77sa/Make_high-resolution_IMG/assets/73769046/008499a5-a27f-409c-aeb6-c5dd7083e75b)
 
