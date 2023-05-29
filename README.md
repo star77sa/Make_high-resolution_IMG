@@ -5,8 +5,10 @@ Vision Agent - Make high-resolution IMG
 고전방식과의 비교를 위해 Bicubic 방법의 출력도 지원합니다.
 
 Super-Resolution을 위해 opencv-contrib-python 설치가 필요합니다.
+프로그램 인터페이스를 위해 PyQt5의 설치가 필요합니다.
 ```python
 $ pip install opencv-contrib-python
+$ pip install PyQt5
 ```
 ### 구성도  
 ├── examples  
