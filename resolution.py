@@ -30,7 +30,6 @@ class Resolution(QMainWindow):
         self.scale = QComboBox(self)
         self.scale.addItems(['2', '4', '8'])
         self.scale.move(165, 70)
-        self.scale.activated[str].connect(self.scalepick)
  
         self.radio1 = QRadioButton("Bicubic(고전방법)", self)
         self.method = "bicubic"
@@ -63,20 +62,20 @@ class Resolution(QMainWindow):
         fname = './examples/' + fname[0].split('/')[-1] # 한글 경로 오류로 수동 지정
         print(fname)
         self.img = cv.imread(fname)
-        if self.img is None : sys.exit('파일을 찾을 수 없습니다.')        
-        # self.img_show = np.copy(self.img)
+        if self.img is None : sys.exit('파일을 찾을 수 없습니다.')
         cv.imshow('Original', self.img)
     
     def convertFucntion(self):
-        if self.scale == '2':
+        pick_scale = self.scale.currentIndex()
+        if pick_scale == 0:
             model = "models/LapSRN_x2.pb"
-        elif self.scale == '4':
+        elif pick_scale == 1:
             model = "models/LapSRN_x4.pb"
-        elif self.scale == '8':
+        elif pick_scale == 2:
             model = "models/LapSRN_x8.pb"
         
         modelName = "lapsrn" # model.split(os.path.sep)[-1].split("_")[0].lower()
-        modelScale = int(self.scale)
+        modelScale = 2**(pick_scale+1)
          
         sr = cv.dnn_superres.DnnSuperResImpl_create()
         sr.readModel(model)
@@ -131,8 +130,8 @@ class Resolution(QMainWindow):
         cv.destroyAllWindows()
         self.close()
         
-    def scalepick(self, text):
-        self.scale = text
+#    def scalepick(self, text):
+#        self.scalecombo = text
        
     def radioButton_clicked(self):
         if self.radio1.isChecked():
